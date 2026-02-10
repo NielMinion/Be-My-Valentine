@@ -372,19 +372,21 @@
         ];
 
         // Images for slideshow (add your own images here!)
+        const baseURL = "https://nielminion.github.io/Be-My-Valentine/";
+        
         const slideshowImages = [
-            "Sheerie Lee.jpeg",
-            "Sheerie Lee2.jpeg", 
-            "Sheerie Lee3.jpeg",
-            "Sheerie Lee4.jpeg",
-            "Sheerie Lee5.jpeg",
-            "Sheerie Lee6.jpeg",
-            "Sheerie Lee7.jpeg",
-            "Sheerie Lee8.jpeg",
-            "Sheerie Lee9.jpeg",
-            "Sheerie Lee10.jpeg",
-            "Sheerie Lee11.jpeg",
-            "Sheerie Lee12.jpeg"
+           baseURL + "Sheerie1.jpeg",
+           baseURL + "Sheerie2.jpeg", 
+           baseURL + "Sheerie3.jpeg",
+           baseURL + "Sheerie4.jpeg",
+           baseURL + "Sheerie5.jpeg",
+           baseURL + "Sheerie6.jpeg",
+           baseURL + "Sheerie7.jpeg",
+           baseURL + "Sheerie8.jpeg",
+           baseURL + "Sheerie9.jpeg",
+           baseURL + "Sheerie10.jpeg",
+           baseURL + "Sheerie11.jpeg",
+           baseURL + "Sheerie12.jpeg"
             // Add more image paths as needed
         ];
         
@@ -652,8 +654,9 @@
             const mainCard = document.getElementById('mainCard');
             
             // Play romantic music
-            const audio = new Audio('Valentine audio.mp3');
-            audio.volume = 0.3;
+            //const audio = new Audio('valentine_audio.mp3');
+            const audio = new Audio(baseURL + 'valentine_audio.mp3');
+            audio.volume = 0.5;
             audio.loop = true;
             audio.play().catch(e => console.log('Audio playback failed:', e));
 
